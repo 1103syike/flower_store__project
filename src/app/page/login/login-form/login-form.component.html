@@ -1,0 +1,20 @@
+<section class="login container col-6">
+    <h3 class="login__title">Login</h3>
+    <p class="login__subtitle">Login or create an account</p>
+    <form class="login-form"
+>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Enter your Email" [formField]="loginForm.email">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Enter your Password" [formField]="loginForm.password">
+        </mat-form-field>
+        <div class="login__btns">
+            <button (click)="onLogin()" class="btn btn-success">Log In</button>
+            <button class="btn btn-dark">Create an account</button>
+        </div>
+    </form>
+    <p>{{this.loginForm.email().value()}}</p>
+</section>

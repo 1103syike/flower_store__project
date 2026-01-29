@@ -1,0 +1,15 @@
+.w-95 {
+    padding:50px  0;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.featured-products__title{
+    font-weight: 600;
+    color: #198754;;
+}
+
+.featured-products{
+    margin-top: 50px;
+}
+

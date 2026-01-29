@@ -1,0 +1,22 @@
+
+
+.login__title{
+    color: #649255;
+    font-size: 32px;
+}
+.login__subtitle{
+    
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__btns{
+    display: flex;
+    gap: 10px;
+}
+.btn{
+    width: 100%;
+}

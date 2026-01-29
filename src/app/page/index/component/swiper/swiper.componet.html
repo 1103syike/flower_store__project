@@ -1,0 +1,16 @@
+<swiper-container class="index__swiper" #swiper init="false" loop="true" autoLoop="true" navigation="true" centered-slides="true" space-between="40">
+  @for (s of slides; track $index) {
+  <swiper-slide class="swiper__slide">
+    <div class="swiper__block">
+
+      <div class="swiper__mask"></div>
+
+      <h3 class="swiper__title" inView (visible)="show[$index] = $event" [class.fade-in]="show[$index]"
+        [innerHTML]="getTitle(s)">
+      </h3>
+
+      <img class="swiper__img" [src]="s.img" alt="">
+    </div>
+  </swiper-slide>
+  }
+</swiper-container>

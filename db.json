@@ -1,0 +1,13 @@
+{
+    "products": [
+        {}
+    ],
+    "users": [
+        {
+            "id": "1",
+            "email": "1103syike@gmail.com",
+            "password": "123456",
+            "isManager": true
+        }
+    ]
+}
